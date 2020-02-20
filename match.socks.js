@@ -6,10 +6,10 @@
 function sockMerchant(arr) {
     const sortArray = arr.sort((a, b) => a - b);
     console.log(sortArray)
-    count = [];
+    let count = [];
     for (var i = 0; i < arr.length; i++) {
         if (sortArray[i] % sortArray[i + 1] == 0) {
-            count.push(arr[i])
+            count.push(sortArray[i])
         }
     } console.log(Math.ceil(count.length / 2))
 }
